@@ -2,9 +2,21 @@
 
 namespace Model;
 
-class SampleModel extends BaseModel
+class SampleModel extends \Nette\Object
 {
+	/** @var \DibiConnection */
+	private $db;
+	
+	
+	
+	public function __construct(\DibiConnection $db) {
+		
+		$this->db = $db;
+		
+	}
     
+	
+	
     /**
      * sample query
      * 
@@ -13,7 +25,7 @@ class SampleModel extends BaseModel
      */
     public function findById($id) {
         
-		return $this->database->select("*")->from("sample_table")->where("id = ", $id)->fetch();
+		return $this->db->select("*")->from("sample_table")->where("id = ", $id)->fetch();
 
     }
 }
