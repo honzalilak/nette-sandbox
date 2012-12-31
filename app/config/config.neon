@@ -38,11 +38,9 @@ common:
 	services:
 		authenticator: Authenticator
 		database:
-			class: DibiConnection
-			arguments: [%database%]
-		modelLoader:
-			class: ModelLoader
-			arguments: ["@container"]
+			class: \DibiConnection(%database%)
+		sampleModel:
+			class: Model\SampleModel(@database)
 		routerFactory: RouterFactory
 		router: @routerFactory::createRouter
 
