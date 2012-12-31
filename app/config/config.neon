@@ -14,16 +14,7 @@ common:
 			database: sandbox
 			profiler: TRUE
 			lazy: TRUE
-	
-	dibi:
-		host: %database.host%
-		username: %database.username%
-		password: %database.password%
-		database: %database.database%
-		profiler: TRUE
-		lazy: TRUE
-	
-	
+
 	php:
 		date.timezone: Europe/Prague
 		# zlib.output_compression: yes
