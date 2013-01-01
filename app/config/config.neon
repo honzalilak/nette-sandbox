@@ -22,7 +22,7 @@ common:
 	nette:
 		application:
 			errorPresenter: Error
-		
+
 		session:
 			expiration: 14 days
 
@@ -34,7 +34,6 @@ common:
 			class: Model\SampleModel(@database)
 		routerFactory: RouterFactory
 		router: @routerFactory::createRouter
-
 
 	factories:
 

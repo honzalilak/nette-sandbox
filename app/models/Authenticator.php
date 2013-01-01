@@ -23,6 +23,7 @@ class Authenticator extends Nette\Object implements Security\IAuthenticator
 	private $database;
 
 
+
 	public function __construct(\Nette\DI\Container $container)
 	{
 		$this->database = $container->$database;
@@ -32,6 +33,7 @@ class Authenticator extends Nette\Object implements Security\IAuthenticator
 
 	/**
 	 * Performs an authentication.
+	 *
 	 * @return Nette\Security\Identity
 	 * @throws Nette\Security\AuthenticationException
 	 */
@@ -56,6 +58,7 @@ class Authenticator extends Nette\Object implements Security\IAuthenticator
 
 	/**
 	 * Computes salted password hash.
+	 *
 	 * @param  string
 	 * @return string
 	 */
@@ -66,5 +69,4 @@ class Authenticator extends Nette\Object implements Security\IAuthenticator
 		}
 		return crypt($password, $salt ?: '$2a$07$' . Strings::random(22));
 	}
-
 }
