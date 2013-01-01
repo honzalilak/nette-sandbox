@@ -1,5 +1,5 @@
 Nette Framework Sandbox - extended with dibi
-=======================
+============================================
 
 The basic skeleton of application extended by dibi database layer.
 
