@@ -1,7 +1,7 @@
-Nette Framework Sandbox - extended with dibi and model loader
+Nette Framework Sandbox - extended with dibi
 =======================
 
-The basic skeleton of application extended by dibi database layer and model loader.
+The basic skeleton of application extended by dibi database layer.
 
 Installation
 ------------
