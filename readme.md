@@ -11,7 +11,7 @@ Installation
 4. Set up privilege for folder log/ and temp/.
 5. Locate the www folder in your browser.
 
-Find below the original Nette Sandbox readme.
+Find below the original Nette Sandbox [readme](https://github.com/nette/sandbox/blob/master/readme.md).
 
 
 What is [Nette Framework](http://nette.org)?
