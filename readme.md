@@ -5,11 +5,11 @@ The basic skeleton of application extended by dibi database layer.
 
 Installation
 ------------
-1. Set up database connection in app/config.neon.
-2. Set up name database in install.sql.
-3. Run install.sql - this will create new database named sandbox.
-4. Set up privilege for folder log/ and temp/.
-5. Locate the www folder in your browser.
+1. Set up database connection in `app/config.neon`.
+2. Set up name database in `install.sql`.
+3. Run `install.sql` - this will create new database named sandbox.
+4. Set up privilege for folder `log/` and `temp/`.
+5. Locate the `www` folder in your browser.
 
 Find below the original Nette Sandbox [readme](https://github.com/nette/sandbox/blob/master/readme.md).
 
